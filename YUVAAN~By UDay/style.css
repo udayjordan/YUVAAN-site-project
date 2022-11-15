@@ -1,0 +1,11 @@
+*{
+    margin:0;
+    padding:0;
+  
+}
+.home{
+    background-image: url('20200122_173451.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}

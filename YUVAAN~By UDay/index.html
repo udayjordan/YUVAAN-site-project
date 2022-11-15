@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:site_name" content="YUVAAN">
+    <meta property="og:title" content="YUVAAN | The Reality Roulette">
+    <meta property="og:description"
+        content="The official website of the technical festival of BITS Pilani, Pilani Campus - 2019 Edition">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://bits-apogee.org/">
+    <meta property="og:type" content="education.education">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YUVAAN </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+    <link rel="shortcut icon" href="./static/favicon.png">
+    <style>
+        #loader-wrap {
+            height: 100vh;
+            width: 100%;
+            z-index: 9999;
+            background: #01061c;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: opacity .2s linear
+        }
+
+        #loader-title {
+            color: #fff;
+            font-family: Helvetica;
+            font-size: 230%;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 65%
+        }
+
+        .loader-circles {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            transform: translateY(-10%)
+        }
+
+        .loader-circles .circle {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            background-color: transparent;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            text-align: center
+        }
+
+        .loader-circles .circle:nth-child(even) {
+            border-color: #d81959;
+            border-bottom-color: transparent;
+            border-right-color: transparent
+        }
+
+        .loader-circles .circle:nth-child(odd) {
+            border-color: #6257bd;
+            border-bottom-color: transparent;
+            border-right-color: transparent
+        }
+
+        .loader-circles .circle:nth-child(1) {
+            width: 20px;
+            height: 20px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 12s
+        }
+
+        .loader-circles .circle:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 6s
+        }
+
+        .loader-circles .circle:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 4s
+        }
+
+        .loader-circles .circle:nth-child(4) {
+            width: 80px;
+            height: 80px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 3s
+        }
+
+        .loader-circles .circle:nth-child(5) {
+            width: 100px;
+            height: 100px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 2.4s
+        }
+
+        .loader-circles .circle:nth-child(6) {
+            width: 120px;
+            height: 120px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 2s
+        }
+
+        .loader-circles .circle:nth-child(7) {
+            width: 140px;
+            height: 140px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 1.71429s
+        }
+
+        .loader-circles .circle:nth-child(8) {
+            width: 160px;
+            height: 160px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 1.5s
+        }
+
+        .loader-circles .circle:nth-child(9) {
+            width: 180px;
+            height: 180px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 1.33333s
+        }
+
+        .loader-circles .circle:nth-child(10) {
+            width: 200px;
+            height: 200px;
+            animation: rotate-circle linear infinite;
+            animation-duration: 1.2s
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes rotate-circle {
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+        </style>
+    <link href="./static/js/chosen.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body class="scroll-disable">
+    <div id="loader-wrap">
+        <div class="loader-circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div id="loader-title">YUVAAN</div>
+    </div>
+    <div id="pointer"></div>
+    <hr class="vertical-lines desktop-only" style="left:10vw">
+    <hr class="vertical-lines desktop-only" style="left:30vw">
+    <hr class="vertical-lines desktop-only" style="left:50vw">
+    <hr class="vertical-lines desktop-only" style="left:70vw">
+    <hr class="vertical-lines desktop-only" style="left:90vw">
+    <div id="nav" class="desktop-only">
+        <div class="nav-item nav-link" data-to="home">
+            <div class="bar"></div>
+            <div class="nav-number-primary nav-link">01</div><span class="nav-hover-text">&nbsp;&nbsp;&nbsp;Home</span>
+            <div class="nav-number-secondary">01</div>
+            <div class="nav-text">Home</div>
+        </div>
+    </div>
+    <div id="navbar"><img id="logo" src="Logo (1750 × 500px) (1680 × 500px).png" alt="YUVAAN">
+        <div id="links">
+            <div id="nav-links" class="desktop-only"><span><a href="./sponsors.html">Sponsors</a></span> <span><a
+                        href="https://bits-apogee.org/aic" target="_blank">AIC</a></span><span><a
+                        href="#" target="_blank">DTULFC</a></span></div><img
+                src="Logo (10).png" alt="MENU" id="hamburger">
+        </div>
+        <div id="links2"><img src="5e9405f858479f23731fb58f31bedd09.svg" alt="CLOSE" class="close-overlay"
+                id="close-events"></div>
+    </div>
+    <div id="side-menu">
+        <div id="side-menu-top"><span id="side-menu-heading">MENU</span> <img src="Logo (11).png"
+                alt="CLOSE" id="close-hamburger"></div>
+        <div id="side-menu-list"><span class="nav-link" data-to="home">HOME</span><span class="nav-link"
+                data-to="about">About</span><span class="nav-link" data-to="events">KERNEL EVENTS</span> <span
+                class="nav-link" data-to="speakers">Speakers</span> <span class="nav-link"
+                data-to="workshop">WORKSHOPS</span> <span class="nav-link" data-to=""><a
+                    href="./sponsors.html">Sponsors</a></span> <span class="nav-link" data-to="contact">CONTACTS</span>
+            <span id="dev-navlink">DEVELOPERS</span></div>
+        <div id="side-menu-footer" class="mobile-only">
+            <div class="content-line-wrap">
+                <hr class="before-content-line">
+            </div><a href="https://www.facebook.com/bitsapogee/" target="_blank"><img
+                    src="4c8f798e758cd0b1e4e87e976ac6c089.png"></a><a href="https://www.instagram.com/bitsapogee/?hl=en"
+                target="_blank"><img src="532848f49f3a6b928d0c80aa9e9f1704.png"></a><a
+                href="https://www.linkedin.com/company/yuvaandtu/" target="_blank"><img
+                    src="91f5a70246eb1eaa2f01d247dad5b03c.png"></a>
+        </div>
+    </div>
+    <div id="all-events"><span id="all-events-title">EVENTS</span>
+        <div id="all-events-categories"><span>Categories</span>
+            <div id="category-loading" class="category-status">Loading...</div>
+            <div id="category-notfound" class="category-status">No events found!</div>
+            <div id="category-error" class="category-status">Error occurred while fetching events!</div>
+        </div>
+        <div id="category-events"></div>
+    </div>
+    <div id="single-event-page" class="overlay">
+        <div class="overlay-topbar"><img src="5e9405f858479f23731fb58f31bedd09.svg" alt="CLOSE" class="close-overlay"
+                id="close-single-event"></div>
+        <div class="overlay-content">
+            <h2 id="single-event-heading">EVENT NAME</h2>
+            <h3>DESCRIPTION</h3>
+            <div id="single-event-content">description</div><br>
+            <h3>RULES</h3>
+            <div id="single-event-rules">rules</div><input type="submit" id="single-event-register"
+                class="register-button" value="Register">
+        </div>
+    </div>
+    <div id="register" class="overlay">
+        <div class="overlay-topbar"><img class="logo-overlay" src="Logo (1750 × 500px) (1680 × 500px).png"
+                alt="YUVAAN"> <img src="Logo (11).png" alt="CLOSE" class="close-overlay"
+                id="close-register"></div>
+        <div id="register-content" class="overlay-content">
+            <h2>REGISTRATION</h2>
+            <form id="register-form" action="">
+                <div id="register-form-content">
+                    <div class="reg-col"><input type="text" name="name" id="register-name" placeholder="Name*"> <select
+                            id="register-college">
+                            <option id="reg-clg-label" value="select" disabled="disabled" selected="selected">Loading...
+                            </option>
+                        </select> <label class="reg-message">If you cannot find your college above, please contact PCr
+                            (<a href="tel:+919462011235">+91-9462011235</a>)</label> <label
+                            class="required">Gender</label>
+                        <div id="gender-div">
+                            <div><input type="radio" id="male" class="gender-option" name="gender" value="M"
+                                    checked="checked"> Male</div>
+                            <div><input type="radio" id="female" class="gender-option" name="gender" value="F"> Female
+                            </div>
+                            <div><input type="radio" id="other" class="gender-option" name="gender" value="O"> Other
+                            </div>
+                        </div><label class="required">Year of study</label>
+                        <div id="year-div">
+                            <div><input type="radio" id="" class="year-option" name="year" value="1" checked="checked">
+                                1</div>
+                            <div><input type="radio" id="" class="year-option" name="year" value="2"> 2</div>
+                            <div><input type="radio" id="" class="year-option" name="year" value="3"> 3</div>
+                            <div><input type="radio" id="" class="year-option" name="year" value="4"> 4</div>
+                            <div><input type="radio" id="" class="year-option" name="year" value="5"> 5</div>
+                        </div>
+                    </div>
+                    <div class="reg-col"><select id="register-events" data-placeholder="Select Event(s)*"
+                            multiple="multiple">
+                            <option id="reg-events-label" value="select" disabled="disabled">Loading...</option>
+                        </select> <input type="text" name="city" id="register-city" placeholder="City*"> <input
+                            type="email" name="email" id="register-email" placeholder="Email*"> <input type="text"
+                            name="phone" id="register-phone" placeholder="Phone*"> <input type="text" name="referral"
+                            id="register-referral" placeholder="Referral"></div>
+                </div><label id="error"></label>
+                <div id="register-buttons"><input type="submit" id="register-submit" class="register-button"
+                        value="Register"> <button id="register-back" class="register-button">Go back</button></div>
+                <div id="register-form-complete"><label>Your registration is complete.</label><label
+                        id="backend-reg-success"></label><br><button id="register-again"
+                        class="register-button">Register again</button></div>
+            </form>
+        </div>
+    </div>
+    <div id="developers" class="overlay">
+        <div class="overlay-topbar"><img class="logo-overlay" src="Logo (1750 × 500px) (1680 × 500px).png"
+                alt="YUVAAN"> <img src="Logo (11).png" alt="CLOSE" class="close-overlay"
+                id="close-dev"></div>
+        <div id="dev-content" class="overlay-content">
+            <h2>DEVE<span style="color:#fc18b9;">LOPERS</span></h2>
+            <div id="dev-container">
+                <div class="dev-card">
+                    <div class="dev-img"><img src="my-image.png"></div>
+                    <div class="dev-name">Uday Shikhar Das</div>
+                    <div class="dev-role">Frontend Developer</div>
+                    <hr>
+                    <div class="dev-links"><a href="https://www.instagram.com/udayshikharjordan1/" target="_blank"><img
+                                src="Logo (3).png"></a><a
+                            href="https://www.linkedin.com/in/uday-shikhar-das-b49b851a9/" target="_blank"><img
+                                src="Logo (2).png"></a></div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-img"><img src="profile-img.jpg"></div>
+                    <div class="dev-name">Pankaj Lahoti</div>
+                    <div class="dev-role">Designer</div>
+                    <hr>
+                    <div class="dev-links"><a href="https://www.instagram.com/pankaj652001/" target="_blank"><img
+                                src="Logo (3).png"></a><a
+                            href="https://www.linkedin.com/in/pankaj-lahoti-392537173/" target="_blank"><img
+                                src="Logo (2).png"></a>
+                            </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="home" class="section">
+            <div class="home-content">
+                <div class="home-content-buttons mobile-only"><a href="https://youtu.be/MqpPYIjDw4I" target="_blank">
+                        <div class="teaser-button mobile-only">WATCH TEASER</div>
+                    </a></div>
+            </div>
+            <div class="home-footer desktop-only">
+                <div class="social-links">
+                    <div class="home-footer-line-wrap">
+                        <div class="before-content-line"></div>
+                    </div>FOLLOW US ON<div class="social-icons"><a href="https://www.facebook.com/YuvaanDTU"
+                            target="_blank"><img src="Logo (4) (1).png"></a><a
+                            href="https://www.instagram.com/yuvaandtu/" target="_blank"><img
+                                src="Logo (6).png"></a><a
+                            href="https://www.linkedin.com/company/yuvaandtu/" target="_blank"><img
+                                src="Logo (5).png"></a></div>
+                </div>
+                <div class="scroll-icon">
+                    <!-- <img src="2c3412891340603cfe41f4f0cb87b83a.png"> -->
+                </div>
+                <div class="fest-tag-line">
+                    <div class="home-footer-line-wrap">
+                        <div class="before-content-line"></div>
+                    </div>Literature and film festival of DTU
+                </div>
+            </div>
+            <img src="Yuvaan Ek Sunhera Karwaan (4) (1).png" id="desktop-bg">
+            
+        </div>
+        <div id="about" class="section">
+            <div id="about-stats">
+                <div id="about-exhibitions" class="circle-ripple"><span class="about-stat-num">75+</span> <span
+                        class="about-stat-title">exhibitions</span></div>
+                <div id="about-exhibitions-ripple-1" class="circle-ripple"></div>
+                <div id="about-exhibitions-ripple-2" class="circle-ripple"></div>
+                <div id="about-exhibitions-ripple-3" class="circle-ripple"></div>
+                <div id="about-exhibitions-ripple-4" class="circle-ripple"></div>
+                <div id="about-speakers" class="circle-ripple"><span class="about-stat-num">100+</span> <span
+                        class="about-stat-title">speakers</span></div>
+                <div id="about-speakers-ripple-1" class="circle-ripple"></div>
+                <div id="about-speakers-ripple-2" class="circle-ripple"></div>
+                <div id="about-speakers-ripple-3" class="circle-ripple"></div>
+                <div id="about-speakers-ripple-4" class="circle-ripple"></div>
+                <div id="about-workshops" class="circle-ripple"><span class="about-stat-num">60+</span> <span
+                        class="about-stat-title">workshops</span></div>
+                <div id="about-workshops-ripple-1" class="circle-ripple"></div>
+                <div id="about-workshops-ripple-2" class="circle-ripple"></div>
+                <div id="about-workshops-ripple-3" class="circle-ripple"></div>
+                <div id="about-workshops-ripple-4" class="circle-ripple"></div>
+            </div>
+            <div id="about-content">
+                <h1 style="font-family: 'Festive', cursive;font-size:60px;font-style:italic;">ABOUT</h1>
+                <div class="content-wrap">
+                    <div class="content-line-wrap">
+                        <div class="before-content-line"></div>
+                    </div>
+                    <div class="content-text" style="font-family: 'Arbutus Slab', serif;
+                    ">YUVAAN witnessed the presence of artists of varied domains of literature and cinematography. 
+                        Lead by the soul motto to scale up and connect literature elites  across India , YUVAAN constantly venture to onboard best of best.
+                        
+                        
+                        Yuvaan has been graced by DTU's own alumni and national bestseller, Durjoy Datta, artists of the viral slam poetry group UnErase Poetry, the wonderful Nizami Brothers who gave the perfect closing ceremony in the form of a Sufi Night, Major General GD Bakshi, celebrated journalists such as Sunetra Chaudhary, Rohit Sardana, Sanket Upadhyay and many more. Yuvaan has set high bars and is ready to become the biggest college literary fests in India.
+                        
+                        Right from famous content creators to great authors, poets, artists all assemble to mark the greatest literature extravaganza.</div>
+                </div>
+            </div>
+        </div>
+        <div id="events" class="section">
+            <h1>EVENTS</h1><br>
+            <div style="font-family: 'Noto Sans JP';font-size: 50px;">近日公開</div>
+        </div>
+        <!-- <div id="speakers" class="section"><span id="speakers-heading">Speakers</span>
+
+            <div id="arrows" class="desktop-only"><img src="Logo (12).png" alt="GO LEFT"
+                    id="speaker-left-arrow" class="speaker-arrow"> <img src="Logo (12).png"
+                    alt="GO LEFT" id="speaker-right-arrow" class="speaker-arrow"></div><img
+                src="Logo (12).png" alt="GO LEFT" id="mobile-speaker-left-arrow"
+                class="speaker-arrow"> <img src="Logo (12).png" alt="GO RIGHT"
+                id="mobile-speaker-right-arrow" class="speaker-arrow">
+                
+        </div> -->
+<!-- card slider -->
+<h1 style="font-size: 60px;justify-content: center;align-items:center ;width:100%; display:flex;">our sponsors</h1>
+        <div class="main-card " style="min-height: 70vh;width:100%; display:flex; align-items:center;justify-content:center;width: calc(100%/3-10px);position: relative;left: -180px;;">
+           
+           <div class="cards" style="height: 180px;width:180px;display: flex;width: calc(100%/3-10px);" >
+            <div class="card" style="height: 180px;width:180px;width: calc(100%/3-10px);padding: 3px;">
+                <div class="content" style="height: 180px;width:180px;padding: 3px;">
+                    <div class="img" style="height: 180px;width:180px;">
+                        <img src="image(6).jpg" alt="" style="height:100%; width:100%;object-fit: cover; border-radius: 50%;padding: 10px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="height: 180px;width:180px;width:calc(100%/3-10px);padding: 3px;">
+                <div class="content" style="height: 180px;width:180px;padding: 3px;">
+                    <div class="img" style="height: 180px;width:180px;">
+                        <img src="image(5).jpg" alt="" style="height:100%; width:100%;object-fit: cover; border-radius: 50%;padding: 10px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="height: 180px;width:180px;width:calc(100%/3-10px);padding: 3px;">
+                <div class="content" style="height: 180px;width:180px;padding: 3px;">
+                    <div class="img" style="height: 180px;width:180px;">
+                        <img src="image(4).jpg" alt="" style="height:100%; width:100%;object-fit: cover; border-radius: 50%;padding: 10px;">
+
+                    </div>
+                </div>
+            </div>
+           
+           </div>
+           <div class="cards" style="height: 180px;width:180px;display: flex;width: calc(100%/3-10px);justify-content:space-between ;" >
+            <div class="card" style="height: 180px;width:180px;width: calc(100%/3-10px);padding: 3px;">
+                <div class="content" style="height: 180px;width:180px;padding: 3px;">
+                    <div class="img" style="height: 180px;width:180px;">
+                        <img src="image(3).jpg" alt="" style="height:100%; width:100%;object-fit: cover; border-radius: 50%;padding: 10px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="height: 180px;width:180px;width:calc(100%/3-10px);padding: 3px;">
+                <div class="content" style="height: 180px;width:180px;padding: 3px;">
+                    <div class="img" style="height: 180px;width:180px;">
+                        <img src="image(1).jpg" alt="" style="height:100%; width:100%;object-fit: cover; border-radius: 50%;padding: 10px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="height: 180px;width:180px;width:calc(100%/3-10px);padding: 3px;">
+                <div class="content" style="height: 180px;width:180px;padding: 3px;">
+                    <div class="img" style="height: 180px;width:180px;">
+                        <img src="image(2).jpg" alt="" style="height:100%; width:100%;object-fit: cover; border-radius: 50%;padding: 10px;">
+
+                    </div>
+                </div>
+            </div>
+           
+           </div>
+           <!-- <div class="button" style="display:flex;margin:20px;">
+            <label style="height: 15px;width:15px;background:#fc18b9; "for="" class="one"></label>
+            <label style="height: 15px;width:15px;background:#fc18b9;"for="" class="two"></label>
+
+           </div> -->
+        </div>
+        <div id="workshop" class="section">
+            <h1>WORKSHOPS</h1>
+            <h1>Coming Soon</h1>
+        </div>
+
+        <div id="contact" class="section">
+            <h1>COUNCIL<span style="color:#fc18b9;">MEMBERS</span></h1>
+            <!-- <h4>28<sup>th</sup> March - 31<sup>st</sup>March</h4> -->
+            <div id="contact-container" class="carousel-contact">
+                <div class="person-container">
+                    <div class="person-image"><img src="1.jpg"></div>
+                    <div class="person-info">Vishrut Mahi<br>Fest Secretary<br>+91-7428111335<br>vishrut14@gmail.com<br></div>
+                </div>
+                <!-- <div class="person-container">
+                    <div class="person-image"><img src="2.jpg"></div>
+                    <div class="person-info">Riyanshi Arora<br>Outreach Director<br>+91-9927611888<br>arorariyanshi03@gmail.com<br></div>
+                </div> -->
+                <div class="person-container">
+                    <div class="person-image"><img src="3.jpg"></div>
+                    <div class="person-info">Ansh Raj<br>Fest Secretary
+    <br>+91-7428111335<br>anshraj.0805@gmail.com<br></div>
+                </div>
+                <div class="person-container">
+                    <div class="person-image"><img src="4.jpg"></div>
+                    <div class="person-info">Rijul Mahajan<br>Joint treasurer
+                        <br>+91-9910232036<br>rijul.mahajan01@gmail.com<br></div>
+                </div>
+                <!-- <div class="person-container">
+                    <div class="person-image"><img src="5.jpg"></div>
+                    <div class="person-info">Lavish Gupta<br>Fest Director <br>+91-9205654295<br>lavishg46@gmail.com<br></div>
+                </div> -->
+                <div class="person-container">
+                    <div class="person-image"><img src="6.jpg"></div>
+                    <div class="person-info">Rishabh Amga<br>Joint Fest Secretary<br>+91-99269 86844<br>rishabhamga17@gmail.com<br></div>
+                </div>
+                <!-- <div class="person-container">
+                    <div class="person-image"><img src="7.jpg"></div>
+                    <div class="person-info">Mayank Goyal<br>Post Director of creative and logistics<br>+91-9953062675<br>mg2362798@gmail.com<br></div>
+                </div> -->
+                <!-- <div class="person-container">
+                    <div class="person-image"><img src="8.jpg"></div>
+                    <div class="person-info">Arihant Shokeen<br>Director of Outreach<br>+91-8510953528<br>Arihantshokeen_2k19it031@dtu.ac.in<br></div>
+                </div> -->
+                <div class="person-container">
+                    <div class="person-image"><img src="9.jpg"></div>
+                    <div class="person-info">Tanmay Garg<br>Treasurer<br>+91-9560324171<br>tanmay2.garg@gmail.com<br></div>
+                </div>
+            </div>
+            <div id="contact-footer">
+                <div class="social-links">FOLLOW US ON<div class="social-icons"><a
+                            href="https://www.facebook.com/YuvaanDTU" target="_blank"><img
+                                src="Logo (4) (1).png"></a><a
+                            href="https://www.instagram.com/yuvaandtu/" target="_blank"><img
+                                src="Logo (6).png"></a><a
+                            href="https://www.linkedin.com/company/yuvaandtu/" target="_blank"><img
+                                src="Logo (5).png"></a></div>
+                </div>
+                <div class="dvm-tag">Developed by <a
+                    href="https://calm-bublanina-d34bec.netlify.app/" target="_blank"><span style="color:#fc18b9;">@udaycodes</span>, LFC DTU</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/js/chosen.jquery.min.js"></script>
+    <script>$('document').ready(function () {
+            $('#register-events').chosen();
+        })</script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
